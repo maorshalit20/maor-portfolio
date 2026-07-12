@@ -9,7 +9,7 @@ export const HERO = {
   name: "מאור שליט",
   title: "בוגר תואר במדעי המחשב | מפתח Full-Stack (MERN)",
   description:
-   "בונה אפליקציות ומערכות Web מקצה לקצה עם React, Node.js/Express ו־MongoDB. נהנה להפוך רעיונות למוצרים עובדים, לפתור בעיות ולבנות חיבור נכון בין ה־Client ל־Server.",
+   "בונה אפליקציות ומערכות Web מקצה לקצה עם React, Node.js/Express ו-MongoDB. נהנה להפוך רעיונות למוצרים עובדים, לפתור בעיות ולבנות חיבור נכון בין ה-Client ל-Server.",
   ctas: {
     about: "קצת עליי",
     bonus: "פרויקטים",

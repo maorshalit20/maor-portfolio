@@ -11,7 +11,7 @@ const courses = [
   {
     title: "MERN Full-Stack Guide (Udemy)",
     description:
-      "פיתוח מקצה לקצה עם Node.js, Express ו-MongoDB באמצעות Mongoose, כולל REST APIs, פעולות CRUD, אימות JWT, שימוש ב-Axios ועקרונות בסיסיים של פריסה.",
+      "פיתוח מקצה לקצה עם Node.js, Express -MongoDB באמצעות Mongoose, כולל REST APIs, פעולות CRUD, אימות JWT, שימוש ב-Axios ועקרונות בסיסיים של פריסה.",
   },
   {
     title: "React - The Complete Guide (Udemy)",

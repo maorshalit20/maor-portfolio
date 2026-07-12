@@ -33,10 +33,10 @@ export default function Projects() {
             </p>
             <div className="mt-4 max-w-3xl">
               <p className="leading-8 text-zinc-300">
-              פיתחתי אפליקציית Full-Stack לניהול ומעקב אחר הוצאות, עם REST API שנבנה ב־Node.js ו־Express ושמירת הנתונים ב־MongoDB.
+              פיתחתי אפליקציית Full-Stack לניהול ומעקב אחר הוצאות, עם REST API שנבנה ב-Node.js ו-Express ושמירת הנתונים ב-MongoDB.
               </p>
               <p className="mt-6 leading-8 text-zinc-300">
-              בצד הלקוח בניתי ממשק React להוספת הוצאות ולצפייה ברשימות ובדוחות, תוך שימוש בטפסים וברכיבים הניתנים לשימוש חוזר. הפרויקט כולל חיבור מלא בין ה־Client ל־Server ומבנה נפרד לצד הלקוח ולצד השרת.
+              בצד הלקוח בניתי ממשק React להוספת הוצאות ולצפייה ברשימות ובדוחות, תוך שימוש בטפסים וברכיבים הניתנים לשימוש חוזר. הפרויקט כולל חיבור מלא בין ה-Client ל-Server ומבנה נפרד לצד הלקוח ולצד השרת.
               </p>
             </div>
             <div className="mt-6 flex flex-wrap gap-2" dir="ltr">

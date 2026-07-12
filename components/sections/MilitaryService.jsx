@@ -30,7 +30,7 @@ export default function MilitaryService() {
 
         <article className="mx-auto mt-8 max-w-4xl rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8">
           <h3 className="text-xl font-semibold text-zinc-100 md:text-2xl">
-            חיל הים — לוגיסטיקה ותפעול (SAP/ERP)
+            חיל הים - לוגיסטיקה ותפעול (SAP/ERP)
           </h3>
           <span className="mt-5 inline-block rounded-full border border-[#FF6A00]/30 bg-[#FF6A00]/10 px-3 py-1 text-sm text-zinc-200">
             2018-2021
