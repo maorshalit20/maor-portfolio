@@ -18,8 +18,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="he" dir="rtl">
-      <body className="antialiased text-zinc-100 overflow-x-hidden">
+    <html lang="he" dir="ltr">
+      <body dir="rtl" className="antialiased text-zinc-100 overflow-x-hidden">
         <main className="container min-h-[var(--app-height)]">{children}</main>
       </body>
     </html>
