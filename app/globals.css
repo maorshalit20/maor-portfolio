@@ -1,16 +1,30 @@
 @import "tailwindcss";
 
+:root {
+  --app-height: 100dvh;
+}
+
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 html,
 body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+  min-height: var(--app-height);
   background: transparent; /* SiteShell שולט על הרקע */
   color: #ededed;
   overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
