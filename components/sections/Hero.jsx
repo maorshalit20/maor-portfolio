@@ -1,26 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { Github, Linkedin, Mail, ExternalLink, ArrowDown } from "lucide-react";
 import { HERO, LINKS } from "@/data/site";
-
-const fade = {
-  hidden: { opacity: 0, y: 14 },
-  show: { opacity: 1, y: 0 },
-};
 
 export default function Hero() {
   return (
     <section dir="rtl" className="relative text-zinc-100 pt-14 pb-8 md:pt-16 md:pb-10">
       <div className="mx-auto max-w-6xl px-5">
-        <motion.div
-          variants={fade}
-          initial="hidden"
-          animate="show"
-          transition={{ duration: 0.45 }}
-          className="mx-auto max-w-4xl text-center"
-        >
+        <div className="mx-auto max-w-4xl text-center">
           {/* TITLE */}
           <div className="flex items-center justify-center gap-4">
             <div className="relative h-28 w-28 overflow-hidden rounded-full border border-[#FF6A00]/25 bg-white/5 shadow-[0_0_0_1px_rgba(255,106,0,0.10)] md:h-36 md:w-36">
@@ -101,7 +89,7 @@ export default function Hero() {
               {LINKS.email}
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
