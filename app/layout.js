@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="he" dir="ltr">
-      <body className="antialiased text-zinc-100 overflow-x-hidden">{children}</body>
+      <body className="antialiased text-zinc-100">{children}</body>
     </html>
   );
 }

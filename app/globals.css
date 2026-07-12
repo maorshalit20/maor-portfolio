@@ -8,7 +8,7 @@ html {
   direction: ltr;
   scroll-behavior: smooth;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 html,
@@ -26,7 +26,4 @@ body {
   min-height: var(--app-height);
   background: transparent; /* SiteShell שולט על הרקע */
   color: #ededed;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
