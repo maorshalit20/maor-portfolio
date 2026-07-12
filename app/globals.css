@@ -5,6 +5,7 @@
 }
 
 html {
+  direction: ltr;
   scroll-behavior: smooth;
   height: 100%;
   overflow-x: hidden;
@@ -17,6 +18,7 @@ body {
 }
 
 body {
+  direction: rtl;
   min-height: 100vh;
   min-height: 100svh;
   min-height: 100dvh;

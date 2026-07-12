@@ -1,28 +1,4 @@
-"use client";
-
-import { useLayoutEffect } from "react";
-
 export default function SiteShell({ children }) {
-  useLayoutEffect(() => {
-    const setViewportHeight = () => {
-      const height = window.visualViewport?.height ?? window.innerHeight;
-      document.documentElement.style.setProperty("--app-height", `${height}px`);
-    };
-
-    setViewportHeight();
-    const raf = window.requestAnimationFrame(setViewportHeight);
-    window.addEventListener("resize", setViewportHeight);
-    window.addEventListener("orientationchange", setViewportHeight);
-    window.visualViewport?.addEventListener("resize", setViewportHeight);
-
-    return () => {
-      window.cancelAnimationFrame(raf);
-      window.removeEventListener("resize", setViewportHeight);
-      window.removeEventListener("orientationchange", setViewportHeight);
-      window.visualViewport?.removeEventListener("resize", setViewportHeight);
-    };
-  }, []);
-
   return (
     <div className="relative min-h-[var(--app-height)] text-zinc-100 overflow-x-hidden">
       {/* רקע גלובלי קבוע – נשאר אותו דבר בכל גלילה */}
