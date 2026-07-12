@@ -1,6 +1,6 @@
 export default function SiteShell({ children }) {
   return (
-    <div className="relative min-h-[var(--app-height)] text-zinc-100 overflow-x-hidden">
+    <div dir="rtl" className="relative min-h-[var(--app-height)] text-zinc-100 overflow-x-clip">
       {/* רקע גלובלי קבוע – נשאר אותו דבר בכל גלילה */}
       <div className="pointer-events-none fixed inset-0 -z-10">
         {/* בסיס כהה */}
