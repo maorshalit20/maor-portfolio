@@ -1,6 +1,28 @@
+"use client";
+
+import { useEffect } from "react";
+
 export default function SiteShell({ children }) {
+  useEffect(() => {
+    const setViewportHeight = () => {
+      const height = window.visualViewport?.height ?? window.innerHeight;
+      document.documentElement.style.setProperty("--app-height", `${height}px`);
+    };
+
+    setViewportHeight();
+    window.addEventListener("resize", setViewportHeight);
+    window.addEventListener("orientationchange", setViewportHeight);
+    window.visualViewport?.addEventListener("resize", setViewportHeight);
+
+    return () => {
+      window.removeEventListener("resize", setViewportHeight);
+      window.removeEventListener("orientationchange", setViewportHeight);
+      window.visualViewport?.removeEventListener("resize", setViewportHeight);
+    };
+  }, []);
+
   return (
-    <div className="relative min-h-screen text-zinc-100 overflow-x-hidden">
+    <div className="relative min-h-[var(--app-height)] text-zinc-100 overflow-x-hidden">
       {/* רקע גלובלי קבוע – נשאר אותו דבר בכל גלילה */}
       <div className="pointer-events-none fixed inset-0 -z-10">
         {/* בסיס כהה */}
@@ -18,7 +40,7 @@ export default function SiteShell({ children }) {
         <div className="absolute inset-0 bg-[radial-gradient(80%_70%_at_50%_20%,rgba(255,106,0,0.10)_0%,transparent_45%,rgba(11,11,15,0.55)_100%)]" />
       </div>
 
-      <main className="relative z-10">{children}</main>
+      <main className="relative z-10 min-h-[var(--app-height)]">{children}</main>
     </div>
   );
 }
